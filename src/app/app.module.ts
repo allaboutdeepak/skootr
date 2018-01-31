@@ -15,6 +15,20 @@ import { User } from '../providers/providers';
 import { Api } from '../providers/providers';
 import { MyApp } from './app.component';
 
+import { CardsPage } from '../pages/cards/cards';
+import { ContentPage } from '../pages/content/content';
+
+import { ItemCreatePage } from '../pages/item-create/item-create';
+import { ItemDetailPage } from '../pages/item-detail/item-detail';
+
+import { ContentPage } from '../pages/content/content';
+import { ContentPage } from '../pages/content/content';
+import { ContentPage } from '../pages/content/content';
+import { ContentPage } from '../pages/content/content';
+
+
+
+
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: HttpClient) {
@@ -38,7 +52,9 @@ export function provideSettings(storage: Storage) {
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,
+    CardsPage,ItemCreatePage,ItemDetailPage,
+    ContentPage
   ],
   imports: [
     BrowserModule,
